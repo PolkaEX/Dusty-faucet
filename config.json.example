@@ -1,0 +1,16 @@
+{
+  "environment": "prod",
+  "debug": false,
+  "Captcha": {
+    "secret": ""
+  },
+  "Ethereum": {
+    "milliEtherToTransfer": 20,
+    "gasLimit": "21000",
+    "prod": {
+      "rpc": "https://eth.dusty.astar.network",
+      "account": "",
+      "privateKey": ""
+    }
+  }
+}

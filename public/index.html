@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astar tetnet Dusty Network faucet-By PolkaEx.io</title>
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/application.css">
+    <link rel="apple-touch-icon" href="./favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicons/android-chrome-192x192.png">
+    <link rel="mask-icon" color="#6151cc" href="./favicons/safari-pinned-tab.svg">
+    <link rel="manifest" href="./favicons/manifest.webmanifest">
+    <link href="./favicons/favicon.ico" rel="icon" type="image/x-icon">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="header-logo"></a>
+      </div>
+    </header>
+    <section class="content">
+      <form action="/" method="POST" id="faucetForm">
+        <div class="request-tokens">
+          <h1>Astar tetnet Dusty Network faucet</h1>
+            <input type="text" id="receiver" name="receiver" />
+            <h2>
+              Please use https://eth.dusty.astar.network RPC to connect<br>
+              to the Dusty testnet.
+            </h2>
+            <button type="submit" id="requestTokens" class="request-tokens-button">Request 0.02 PLD</button>
+        </div>
+        <div class="text-xs-center">
+          <div class="g-recaptcha" data-sitekey="6LfHMT8cAAAAAM7yo08Q5hbkqwwIWh0QP3gvVOeS"></div>
+        </div>
+      </form>
+    </section>
+    <div class="loading-container hidden">
+      <div class="loading">
+        <div class="loading-i"></div>
+        <div class="loading-i"></div>
+        <div class="loading-i"></div>
+        <div class="loading-i"></div>
+        <div class="loading-i"></div>
+        <div class="loading-i"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p class="rights">2021 Astar tetnet Dusty Network faucet-By PolkaEx.io All rights reserved.</p>
+        <a class="logo" href='/'></a>
+        <div class="socials">
+          <a href="https://twitter.com/PolkaExOfficial" target="_blank" class="social social_twitter"></a>
+          <a href="https://polkaex.io" target="_blank" class="social social_oracles"></a>
+          <a href="https://t.me/polkaexgroup" target="_blank" class="social social_telegram"></a>
+          <a href="https://github.com/PolkaEX" target="_blank" class="social social_github"></a>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/javascripts/application.js?v=1.4" type="text/javascript"></script>
+    <script type="text/javascript">
+      var url = new URL(window.location.href);
+      document.getElementById('receiver').value = url.searchParams.get("address");
+    </script>
+  </body>
+</html>
